@@ -1,0 +1,267 @@
+/* Générale */
+body {
+    background-color: #272727;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header/bouton */
+header {
+    display: flex;
+    justify-content: space-between; /* Pour séparer le logo et la navigation */
+    align-items: center; /* Alignement vertical */
+    background-color: #101010;
+    height: 6.25rem;
+    color: #fff;
+    padding: 0.063rem;
+    text-align: center;
+}
+
+.logo {
+    width: 10rem;
+    display: flex;
+    align-items: center; /* Alignement vertical */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Alignement vertical */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Utilisation de Flexbox */
+    align-items: center; /* Alignement vertical */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.25rem;
+}
+
+nav ul img {
+    display: flex;
+    justify-content: left;
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 6.25rem; 
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+nav ul li img {
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    margin: 0 0.2rem;
+    background-color: #54cde8dc;
+    border-radius: 0.313rem;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0.3rem;
+    width: 1rem;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    padding: 1.25rem; 
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2.5rem; 
+}
+
+.hero h2 {
+    font-size: 2rem; 
+}
+
+.btn {
+    display: inline-block;
+    background-color: #54cde8dc;
+    color: #fff;
+    padding: 0.625rem 1.25rem; 
+    text-decoration: none;
+    border-radius: 0.313rem; 
+}
+
+.features {
+    border-top: 0.063rem solid #ccc;
+    padding-top: 1.25rem; 
+}
+
+.features h2 {
+    margin-bottom: 0.625rem; 
+}
+
+footer {
+    background-color: #101010;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem; 
+}
+
+/* Affichage des jeux vidéo */
+#games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centrer les jeux horizontalement avec un espacement égal */
+    margin-left: auto; /* Décalage à gauche */
+    margin-right: auto; /* Décalage à droite */
+    max-width: 75rem; 
+}
+
+.game {
+    flex: 0 1 calc(33.333% - 1.25rem); 
+    position: relative;
+    border: none;
+    border-radius: 0.625rem; 
+    padding: 0.625rem; 
+    margin-bottom: 1.25rem; 
+    overflow: hidden; /* Pour cacher les boutons débordants */
+    box-sizing: border-box; /* Inclure les bordures et le rembourrage dans le calcul de la taille */
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem; 
+    transition: transform 0.3s ease; /* Transition fluide lors du survol */
+}
+
+.game:hover img {
+    transform: scale(1.01); /* Agrandissement de l'image au survol */
+}
+
+.game .buttons {
+    display: none;
+    position: absolute;
+    background-color: #54cde8dc;
+    width: 2.8125rem; 
+    top: 0.625rem; 
+    right: 0.625rem; 
+    z-index: 999;
+}
+
+.game:hover .buttons {
+    display: block; /* Afficher les boutons au survol */
+    background-color: #54cde8dc;
+}
+
+.game h3 {
+    margin-top: 0.625rem; 
+    font-size: 1rem; 
+}
+
+.review-game-btn{
+    background-color: #54cde8dc;
+    border : none;
+    
+    z-index: 999;
+}
+
+.comment-container {
+    max-height: 12.5rem; 
+    overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+    border: 0.063rem solid #ccc; 
+    padding: 0.625rem;
+}
+
+/* Détails du jeu */
+.game-details {
+    margin: 0.625rem auto; 
+    width: auto;
+    max-width: 50rem; 
+    padding: 1.25rem; 
+    background-color: #f9f9f9;
+    color: black;
+    border-radius: 0.625rem; 
+    box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); 
+}
+
+/* Image du jeu */
+.game-info img {
+    width: 35%; 
+    height: auto;
+    border-radius: 0.5rem; 
+    margin-bottom: 1.25rem; 
+}
+
+/* Titre du jeu */
+.game-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem; 
+}
+
+/* Détails du jeu */
+.game-info p {
+    font-size: 1rem; 
+    margin-bottom: 0.625rem; 
+}
+
+#filters-container {
+    display: none; /* Masquer les filtres par défaut */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #101010; /* Arrière-plan blanc */
+    border-top: none; /* Bordure supérieure */
+    padding: 0.625rem; 
+    box-sizing: border-box;
+    z-index: 999; /* Pour afficher les filtres au-dessus des jeux */
+}
+
+#filters-container.active {
+    display: block; /* Afficher les filtres lorsque la classe "active" est présente */
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 1.25rem; 
+    text-align: center; /* Centrer les boutons de pagination */
+}
+
+.pagination button {
+    background-color: #54cde8dc; /* Bleu */
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem; 
+    margin: 0.313rem; 
+    border-radius: 0.313rem; 
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color:#007bff; /* Bleu foncé pour le bouton actif */
+}
+
+.pagination button:not(.active) {
+    background-color:#54cde8dc ; /* Changement de couleur au survol uniquement pour les boutons non actifs */
+}
+
+@media screen and (max-width: 50rem) {
+    .game {
+        flex-basis: calc(50% - 1.25rem); 
+    }
+}
+
+@media screen and (max-width: 37.5rem) { 
+    .game {
+        flex-basis: calc(100% - 1.25rem); 
+    }
+}

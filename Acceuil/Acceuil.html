@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de Jeux Vidéo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Image/Logo_GameHub.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <img src="Image/Logo_GameHub.png" alt="Logo de la plateforme de jeux vidéo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#"></a> <img src="Image/accueil.png" alt="Logo de l'accueil"></li>
+                <li><a href="../Fonctionnalités/Forum/Forum.html"><img src="Image/discussion.png" alt="Logo forums"></a></li>
+                <li><input type="text" id="search-input" placeholder="Rechercher..."></li>
+                <li><a href="#" id="connexionLink"><img src="Image/connexion.png" alt="Logo connexion"></a></li>
+            </ul>
+        </nav>
+        <div id="filters-container">
+            <select id="filter-dev">
+                <option value="tous">Tous les développeurs</option>
+                <option value="Rockstar Games">Rockstar Games</option>
+                <option value="Ubisoft">Ubisoft</option>
+                <option value="Bethesda Game Studios">Bethesda Game Studios</option>
+                <option value="Naughty Dog">Naughty Dog</option>
+                <option value="CD Projekt Red">CD Projekt Red</option>
+                <option value="Square Enix">Square Enix</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="Capcom">Capcom</option>
+                <option value="Blizzard Entertainment">Blizzard Entertainment</option>
+                <option value="Epic Games">Epic Games</option>
+            </select>
+            
+            <select id="filter-platform">
+                <option value="tous">Toutes les plateformes</option>
+                <option value="PlayStation 4">PlayStation 4</option>
+                <option value="Xbox One">Xbox One</option>
+                <option value="Nintendo Switch">Nintendo Switch</option>
+                <option value="PC">PC</option>
+                <option value="PlayStation 5">PlayStation 5</option>
+                <option value="Xbox Series X">Xbox Series X</option>
+                <option value="Nintendo 3DS">Nintendo 3DS</option>
+                <option value="iOS">iOS</option>
+                <option value="Android">Android</option>
+                <option value="Google Stadia">Google Stadia</option>
+            </select>
+            
+            <select id="filter-genre">
+                <option value="tous">Tous les genres</option>
+                <option value="Action">Action</option>
+                <option value="Aventure">Aventure</option>
+                <option value="RPG">RPG</option>
+                <option value="FPS">FPS</option>
+                <option value="Sport">Sport</option>
+                <option value="Simulation">Simulation</option>
+                <option value="Stratégie">Stratégie</option>
+                <option value="Horreur">Horreur</option>
+                <option value="Plateforme">Plateforme</option>
+                <option value="Course">Course</option>
+            </select>
+            
+        </div>   
+    </header>
+    <main>
+         
+        <section class="hero">
+            <h2>Bienvenue sur notre plateforme de jeux vidéo !</h2>
+            <p>Découvrez les derniers jeux, partagez vos avis et participez aux discussions passionnantes.</p>
+            <a href="#" class="btn">Découvrir les jeux</a>
+        </section>
+        <section class="features">
+            <h2>Nos fonctionnalités</h2>
+            <ul>
+                <li>Découverte et notation des jeux</li>
+                <li>Recherche avancée par genre, plateforme ou développeur</li>
+                <li>Forums de discussion et groupes communautaires</li>
+            </ul>
+        </section>
+        <!-- Ajout d'un conteneur pour afficher les jeux vidéo -->
+        <div  id="games-container"></div>
+
+        <div id="pagination-container" class="pagination"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plateforme de Jeux Vidéo. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
