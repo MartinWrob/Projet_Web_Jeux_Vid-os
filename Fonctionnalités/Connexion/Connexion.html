@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section" id="loginSection">
+            <a href="../../Acceuil/Acceuil.html" class="close-btn">X</a>
+            <img src="Image/Logo_GameHub.png" alt="Logo de la plateforme de jeux vidéo" class="logo">
+            <h2>Connectez-vous à votre compte</h2>
+            <form action="login.php" method="post" id="loginForm">
+                <div class="textbox">
+                    <input type="text" placeholder="Email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Mot de passe" name="password" required>
+                </div>
+                <input type="submit" class="btn" value="Se connecter">
+                <p class="signup-link">Pas encore de compte ? <a href="#" id="signupLink">Inscrivez-vous ici</a></p>
+            </form>
+        </div>
+        <div class="login-section signup-section" id="signupSection" style="display: none;">
+            <a href="../../Acceuil/Acceuil.html" class="close-btn">X</a>
+            <img src="Image/Logo_GameHub.png" alt="Logo de la plateforme de jeux vidéo" class="logo">
+            <h2>Créez votre compte</h2>
+            <form action="register.php" method="post" id="signupForm">
+                <div class="textbox">
+                    <input type="text" placeholder="Nom" name="lastname" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Prénom" name="firstname" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Mot de passe" name="password" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Confirmer le mot de passe" name="confirm_password" required>
+                </div>
+                <input type="submit" class="btn" value="S'inscrire">
+                <p class="signup-link"><a href="#" id="backToLogin">Retour à la page de connexion</a></p>
+            </form>
+        </div>
+        <div class="image-section">
+            <img src="Image/26270c0e8941534a06d67dfeac20358a.jpg" alt="Grande image">
+        </div>
+    </div>
+<script src="script.js"></script> 
+</body>
+</html>
