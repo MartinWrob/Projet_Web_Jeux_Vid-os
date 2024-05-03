@@ -8,7 +8,6 @@ GameHub est une application web qui permet aux utilisateurs de découvrir, de no
 - **Catalogue de Jeux** : Parcourez un vaste catalogue de jeux, triés par genre ou popularité.
 - **Détails des Jeux** : Consultez des informations détaillées sur chaque jeu, y compris le titre, le genre, le développeur et la note moyenne.
 - **Ajouter des Avis** : Les utilisateurs peuvent ajouter des avis aux jeux, y compris une note et des commentaires pour partager leurs opinions avec les autres.
-- **Jeux Favoris** : Les utilisateurs peuvent marquer des jeux comme favoris pour suivre leurs titres préférés.
 - **Design Adaptatif** : L'application est optimisée pour différentes tailles d'écran, garantissant une expérience fluide sur tous les appareils.
 - **Fonctionnalités Communautaires** : GameHub intègre des fonctionnalités communautaires telles que des forums ou des groupes pour que les utilisateurs puissent interagir les uns avec les autres.
 
